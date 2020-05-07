@@ -91,7 +91,7 @@ def CreateDirAndInstallWGetonSys32(WindowsDir):
             os.mkdir(path)
             print("Wget Folder sucessfully created at", path, sep=" ")
         for p in CurrentFilesInthisDir:
-            if p == "wget-1.11.4-1-bin.zip" or p == "wget-1.11.4-1-bin.zip" or p==(".zip") in p==True :
+            if p.endswith(".zip") or p.endswith(".rar"):
                 skip = True
                 continue
                 if skip:
